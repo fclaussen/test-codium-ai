@@ -1,0 +1,43 @@
+{
+	"templateParts": [
+		{
+			"name": "header",
+			"area": "header",
+			"title": "Header"
+		},
+		{
+			"name": "footer",
+			"area": "footer",
+			"title": "Footer"
+		}
+	],
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"defaultDuotone": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
+			"palette": []
+		},
+		"layout": {
+			"contentSize": "1000px",
+			"wideSize": "calc( var(--wp--style--global--content-size) + 7% )"
+		},
+		"typography": {
+			"fluid": true,
+			"fontFamilies": [],
+			"fontSizes": []
+		},
+		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"spacing": {
+			"padding": {
+				"left": "1rem",
+				"right": "1rem"
+			}
+		}
+	},
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.3/theme.json"
+}
