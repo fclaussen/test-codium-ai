@@ -5,15 +5,15 @@ const RemoveEmptyScriptsPlugin = require('webpack-remove-empty-scripts');
 
 // Utilities
 const path = require('path');
-
+const currentDir = process.cwd();
 module.exports = {
 	...defaultConfig,
 	...{
 		entry: {
-			'js/main': path.resolve(process.cwd(), 'src/js', 'main.ts'),
-			'js/editor': path.resolve(process.cwd(), 'src/js', 'editor.ts'),
-			'css/main': path.resolve(process.cwd(), 'src/scss', 'main.scss'),
-			'css/editor': path.resolve(process.cwd(), 'src/scss', 'editor.scss'),
+			'js/main': path.resolve(currentDir, 'src/js', 'main.ts'),
+			'js/editor': path.resolve(currentDir, 'src/js', 'editor.ts'),
+			'css/main': path.resolve(currentDir, 'src/scss', 'main.scss'),
+			'css/editor': path.resolve(currentDir, 'src/scss', 'editor.scss'),
 		},
 		plugins: [
 			// Include WP's plugin config.
